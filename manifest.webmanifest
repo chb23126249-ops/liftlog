@@ -1,0 +1,19 @@
+{
+  "name": "LiftLog 운동 기록",
+  "short_name": "LiftLog",
+  "description": "나의 운동 기록과 회복 흐름을 한곳에서 관리하세요.",
+  "lang": "ko",
+  "start_url": "./workout-log.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f6f4",
+  "theme_color": "#151515",
+  "icons": [
+    {
+      "src": "./liftlog-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
