@@ -1,4 +1,4 @@
-const CACHE_NAME = 'liftlog-mobile-v4';
+const CACHE_NAME = 'liftlog-mobile-v5';
 const APP_FILES = ['./', './index.html', './workout-log.html', './manifest.webmanifest', './liftlog-icon.svg'];
 
 self.addEventListener('install', event => {
@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('liftlog-') && key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim()));
 });
 
 self.addEventListener('fetch', event => {
