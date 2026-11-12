@@ -1,4 +1,4 @@
-const CACHE_NAME = 'liftlog-mobile-v5';
+const CACHE_NAME = 'liftlog-mobile-v6';
 const APP_FILES = ['./', './index.html', './workout-log.html', './manifest.webmanifest', './liftlog-icon.svg'];
 
 self.addEventListener('install', event => {
