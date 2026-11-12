@@ -1,5 +1,5 @@
-const CACHE_NAME = 'liftlog-mobile-v3';
-const APP_FILES = ['./', './workout-log.html', './manifest.webmanifest', './liftlog-icon.svg'];
+const CACHE_NAME = 'liftlog-mobile-v4';
+const APP_FILES = ['./', './index.html', './workout-log.html', './manifest.webmanifest', './liftlog-icon.svg'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)).then(() => self.skipWaiting()));
